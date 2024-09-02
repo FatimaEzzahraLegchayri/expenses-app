@@ -57,28 +57,22 @@ header button{
     width: 100vw;
 
 }
-p:nth-child(1){
+.title{
     font-size: 4em;
     line-height: 1em;
-    font-weight: bold;    
+    font-weight: bold; 
 }
-p:nth-child(2){
+.subTitle{
     font-size: 1.2em;
     color: grey;
     padding: 1em 0;
-    /* background-color: red; */
 }
-.title button{
+.textLeft button{
     padding:1em 1.4em ;
     font-size: 1em;
     color: white;
     background-color: orangered;
 }
-.title button i{
-    padding-left: 0.5em;
-    font-size: 1.3em;
-}
-
 @keyframes slideDown{
   0%{
     transform: translateY(-100px);
@@ -92,16 +86,16 @@ p:nth-child(2){
     } 
 }
 
-.title p{
+.textLeft p{
     animation: slideDown 3s forwards;
     opacity: 0;
    
 }
-.title p:nth-child(2){
+.textLeft p:nth-child(2){
     animation-delay: 0.5s;
 }
 
-.title button{
+.textLeft button{
     animation: slideDown 3s ease-out forwards;
 }
 @keyframes imgUp{
@@ -118,7 +112,7 @@ p:nth-child(2){
 .feature1 img{
     animation: imgUp 3s ease-out forwards;
 }
-/* ////////////////////////////// feature2 */
+/* ////////////////////////////// features */
 
 .feature2{
     background-color: orangered;
@@ -138,9 +132,32 @@ p:nth-child(2){
     bottom: 0;
     height: 90%;
     border-radius: 1em 1em 0 0;
+    animation: imageUp 2s ease-in forwards;
+}
+@keyframes imageUp{
+from{
+    transform: translateY(200px);
+    opacity: 0;
+}
+to{
+    transform: translateY(0);
+    opacity: 1;
+
+}}
+
+.learnMore{
+    display: inline-flex;
+    align-items: center ;
+}
+.learnMore i{
+    font-size: 1.5em;
+    color: orangered;
+
+}
+.learnMore a{
+    color: orangered;
 }
 .icons img{
-    /* color: black; */
     filter: grayscale(100%);
     opacity: 59%;
     width: 10em;
@@ -148,7 +165,55 @@ p:nth-child(2){
 }
 .icons{
     width: 100vw;
-    height: 30vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     margin-top: 2em;
+}
+.learnMore:hover i{
+    animation: hoverAnimation 0.3s ease-out forwards;
+}
+@keyframes hoverAnimation{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translateX(8px);
+    }
+}
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60vh;
+    /* width: 100vw; */
+
+}
+.product p:first-child{
+    font-size: 4.5em;
+    /* background-color: red; */
+    line-height: 1em;
+    font-weight: 700; 
+    flex: 9;
+
+}
+.product p:not(:first-child){
+    flex: 4;
+    color: gray;
+}
+
+
+.card{
+    border: 1px solid white;
+    border-radius: 5%;
+    text-align: center;
+}
+.card .title{
+    font-size: 1.5em;
+}
+.card .subTitle{
+    font-size: 1em;
+}
+.card i:first-child{
+    background-color: bisque;
+}
