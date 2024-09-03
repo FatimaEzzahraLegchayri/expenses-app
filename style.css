@@ -156,6 +156,8 @@ to{
 }
 .learnMore a{
     color: orangered;
+    text-decoration: none;
+
 }
 .icons img{
     filter: grayscale(100%);
@@ -206,13 +208,13 @@ to{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 1em;
 }
 .card{
     border: 1px solid rgb(239, 236, 236);
     border-radius: 1em;
     text-align: center;
-    padding: 4em 3em;
+    padding: 1em 3em;
     box-shadow: 10px 10px 30px rgb(234, 228, 228);
 }
 .card:hover{
@@ -237,10 +239,10 @@ to{
     color: #FFBD74;
     font-size: 1.5em;
 }
-.card i:last-child{
+.card .card-flesh i{
     display: none;
 }
-.card:hover i:last-child{
+.card:hover .card-flesh i{
     display: inline-block;
     font-size: 1.5em;
     transition: ease-in;
@@ -252,4 +254,63 @@ to{
 .card:nth-child(3) i:not(:last-child){
     color: #4D12EE;
     background-color: #F6F3FE;
+}
+/* ///////////// pricing  */
+.pricing-card{
+    text-align: start;
+}
+.toFlex{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+.choice{
+    padding: 1em 0;
+}
+.toFlex i:first-child{
+    font-size: 1em;
+    background-color: transparent;
+}
+.toFlex p{
+    font-size: 1em;
+    position: absolute;
+    top: 6px;
+    left: 2.5em;
+}
+.subscription{
+    line-height: 6px;
+}
+.subscription p{
+    font-size: 0.2em;
+}
+.price span{
+    color: gray;
+}
+.price{
+    font-weight: bold;
+}
+.pricing-card button{
+    padding:0.7em 2em ;
+    background-color: rgb(255, 255, 255);
+    color: orangered;
+    margin-top: 2em;
+}
+
+
+.pricing-card:hover button{
+    background-color: orangered;
+    color: white;
+}
+.pricing{
+    margin-top: 8em;
+}
+.pricing .big-title{
+    font-size: 3em;
+    line-height: 1em;
+    font-weight: bold;
+    padding: 1em 1em;
+    text-align: center;
+}
+.card-container-price{
 }
