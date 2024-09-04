@@ -2,12 +2,36 @@
 .info{
     height: 80vh;
 }
+body{
+    overflow: auto;
+}
+body::-webkit-scrollbar {
+    width: 0; /* Hides the scrollbar */
+    height: 0; /* Hides the scrollbar */
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins;
 }
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    cursor: pointer;
+}
+.logo p{
+    color: orangered;
+}
+.logo span{
+    border-radius: 50%;
+    color: black;
+    border: 3px solid orangered;
+    padding: 0.1em 0.4em;
+}
+
 .section{
     padding:1em 14em;
 
@@ -16,6 +40,7 @@ button{
     border: 1px solid orangered;
     padding: 8px 8px;
     border-radius: 10px;
+    cursor: pointer;
 }
 nav{
     display: flex;
@@ -47,6 +72,11 @@ header{
 header button{
     color: orangered;
     background-color: white;
+}
+
+header button:hover{
+    background-color: orangered;
+    color: white;
 }
 .feature1{
     display: flex;
@@ -391,7 +421,7 @@ to{
 .download img:nth-child(1){
     position: absolute;
     bottom: 4em;
-    left: 17em;
+    left: 16em;
 }
 .download img:nth-child(2){
     position: absolute;
@@ -400,11 +430,14 @@ to{
     flex: 4;
 }
 /* /////////////////////// footer //////////// */
+footer{
+    width: 100vw;
+    height: 40vh;
+}
 .footer-container{
     display: flex;
     align-items: start;
     justify-content: space-between;
-    height: 70vh;
     padding: 5em 0;
 }
 .links ul:nth-child(1){
@@ -419,15 +452,21 @@ to{
 }
 .links p:nth-child(2){
     color: rgb(194, 191, 191);
+    padding-bottom: 1EM;
 }
 .links p:last-child{
     color: rgb(194, 191, 191);
     font-size: 0.7em;
+    margin-top: 1.5em;
 }
 .input-container{
     border: 1px solid black;
     position: relative;
     height: 3em;
+    border-radius: 0.5em;
+    /* background-color: #E2598B; */
+    padding: 0.1em 0.5em;
+
 }
 .input-container button{
     background-color: orangered;
@@ -436,4 +475,37 @@ to{
     right: 5px;
     top:3px;
     margin: auto;
+}
+.input-container input{
+    border: none;
+    outline: none;
+    height: 3em ;
+    margin: auto 0;
+}
+.subFooter-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2em;
+    padding-top: 1em;
+    border-top: 1px solid rgb(215, 209, 209);
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.socials a{
+    font-size: 1.1em;
+    padding-left: 0.3em;
+}
+.privacy a{
+    padding-right: 1em;
+    text-decoration: none;
+    font-size: 0.8em;
+    
+}
+.copyright{
+    text-decoration: none;
+    font-size: 0.8em;
 }
