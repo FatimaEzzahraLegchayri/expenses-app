@@ -11,40 +11,44 @@
 </head>
 <body>
     <header class="header-shadow section" id="header">
-        <div class="logo">
+        <a href="#home" class="logo">
             <span>ex</span>
             <p>penses</p>
-        </div>
+        </a>
         <nav>
             <a href="#feature">Features</a>
             <a href="#about">About us</a>
             <a href="#pricing">Pricing</a>
-            <a href="feedback">Feedback</a>
+            <a href="#feedbacks">Feedback</a>
         </nav>
         <button>Request a demo</button>
     </header>
-    <!-- padding:1em 14em; -->
-    <section id="feature" class="feature1 section">
+
+    <section id="home" class="feature1 section">
         <div class="textLeft">
             <p class="title">Track your Expenses to Save Money</p>
             <p class="subTitle">Helps you to organize your income and expenses</p>
             <button>Try free demo <i class='bx bx-up-arrow-circle bx-flip-vertical' ></i></button>
         </div>
-        <img src="./images/Opera Snapshot_2024-08-31_164510_xpense-app-ali.vercel.app.png" alt="">
+        <img class="heroImg" src="./images/Opera Snapshot_2024-08-31_164510_xpense-app-ali.vercel.app.png" alt="">
     </section>
     
     <section class="feature2">
         <img src="./images/feature2.png" alt="">
     </section>
 
-    <section class="icons section">
+    <section class="icons">
         <img src="./images/facebook-5.svg" alt="">
-        <img src="./images/3-1.svg" alt="">
         <img src="./images/download (1).png" alt="">
         <img src="./images/download.png" alt="">
+        <img src="./images/facebook-5.svg" alt="">
+        <img src="./images/download (1).png" alt="">
+        <img src="./images/download.png" alt="">
+    
     </section>
-    <section class="feature1 section">
-        <div class="textLeft">
+
+    <section id="feature" class="feature1 section">
+        <div class="showLeft-container">
             <p class="subTitle">Alwalys online</p>
             <p class="title">Real-time support with cloud</p>
             <p class="subTitle">Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper eget ut.</p>
@@ -53,12 +57,12 @@
                 <i class='bx bx-chevrons-right'></i>
             </div>
         </div>
-        <img src="./images/feature3.png" alt="">
+        <img class="showRight-container" src="./images/feature3.png" alt="">
     </section>
 
     <section class="feature1 section">
-        <img src="./images/feature4.png" alt="">
-        <div class="textLeft">
+        <img class="showLeft-container" src="./images/feature4.png" alt="">
+        <div class="showRight-container">
             <p class="subTitle">Free of cost</p>
             <p class="title">Save cost for you and family</p>
             <p class="subTitle">Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper eget ut.</p>
@@ -71,7 +75,7 @@
     </section>
     
     <section class="feature1 section">
-        <div class="textLeft">
+        <div class="showLeft-container">
             <p class="subTitle">Use anytime</p>
             <p class="title">Use anytime when you need</p>
             <p class="subTitle">Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper eget ut.</p>
@@ -80,7 +84,7 @@
                 <i class='bx bx-chevrons-right'></i>
             </div>
         </div>
-        <img src="./images/feature5.png" alt="">
+        <img class="showRight-container" src="./images/feature5.png" alt="">
 
     </section>
 
@@ -119,7 +123,7 @@
         </div>
     </section>
 
-    <section class="pricing section">
+    <section id="pricing" class="pricing section">
         <p class="big-title">Choose your flexible plan.</p>
         <div class="card-container">
             <div class="card pricing-card">
@@ -196,7 +200,7 @@
         </div>
     </section>
     
-    <section class="feedback-section section">
+    <section id="feedbacks" class="feedback-section section">
         <div class="title">We have millions of best wishers       </div>
         <div class="feedback-container">
             <div class="feedback-card">
@@ -235,14 +239,18 @@
         <button>Try free demo <i class='bx bx-chevron-down'></i> </button>
         
         <div>
-            <img src="./images/download left.png" alt="">
-            <img src="./images/download right.png" alt="">
+            <img class="showLeft-container" src="./images/download left.png" alt="">
+            <img class="showRight-container" src="./images/download right.png" alt="">
         </div>
     </section>
-    
+</body>
+
     <footer class="section">
         <div class="footer-container">
-            <div class="logo">exp</div>
+            <div class="logo">
+                <span>ex</span>
+                <p>penses</p>
+            </div>            
             <div class="links">
                     <ul>LINKS</ul>
                     <ul>Home</ul>
@@ -288,10 +296,5 @@
             </div>
         </div>
     </footer>
-    
-    
-    
-    
-</body>
 <script src="./script.js"></script>
 </html>

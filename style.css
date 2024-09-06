@@ -2,6 +2,7 @@
 .info{
     height: 80vh;
 }
+
 body{
     overflow: auto;
 }
@@ -21,6 +22,7 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     gap: 5px;
     cursor: pointer;
+    text-decoration: none;
 }
 .logo p{
     color: orangered;
@@ -103,6 +105,10 @@ header button:hover{
     color: white;
     background-color: orangered;
 }
+.textLeft button:hover{
+    background-color: rgb(255, 255, 255);
+    color: orangered;
+}
 @keyframes slideDown{
   0%{
     transform: translateY(-100px);
@@ -139,7 +145,7 @@ header button:hover{
 
    } 
 }
-.feature1 img{
+.feature1 .heroImg{
     animation: imgUp 3s ease-out forwards;
 }
 /* ////////////////////////////// features */
@@ -162,7 +168,13 @@ header button:hover{
     bottom: 0;
     height: 90%;
     border-radius: 1em 1em 0 0;
+    transition: transform 0s ease-in;
+   
+}
+.imageUp{
+    /* display: inline-block; */
     animation: imageUp 2s ease-in forwards;
+
 }
 @keyframes imageUp{
 from{
@@ -201,6 +213,11 @@ to{
     display: flex;
     justify-content: space-between;
     margin-top: 2em;
+    animation: iconMoveLeft 20s linear infinite;
+}
+@keyframes iconMoveLeft{
+    from{ transform: translateX(100%);}
+    to{transform: translateX(-100%);}
 }
 .learnMore:hover i{
     animation: hoverAnimation 0.3s ease-out forwards;
@@ -314,6 +331,7 @@ to{
 }
 .subscription p{
     font-size: 0.2em;
+    line-height: 1em;
 }
 .price span{
     color: gray;
@@ -414,9 +432,8 @@ to{
     background-color: rgb(251, 208, 193);
 }
 .download p:nth-child(2){
-    font-size: 1.7em;
-    padding: 1em 0;
-
+    font-size: 1.5em;
+    padding-bottom: 1em;
 }
 .download img:nth-child(1){
     position: absolute;
@@ -449,6 +466,10 @@ footer{
     color: grey;
     font-size: 1em;
     padding-bottom: 0.5em;
+}
+.links ul:not(:first-child):hover{
+    color: orangered;
+    cursor: pointer;
 }
 .links p:nth-child(2){
     color: rgb(194, 191, 191);
@@ -508,4 +529,33 @@ footer{
 .copyright{
     text-decoration: none;
     font-size: 0.8em;
+}
+.subFooter-container a:hover{
+    color: orangered;
+}
+
+/* ////////////////////// */
+
+.showLeft-container{
+    
+    transform: translatex(-300px);
+    opacity: 0;
+    transition: all 2s ease-in;
+}
+.showLeft{
+    /* background-color: #E2598B; */
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.showRight-container{
+    
+    transform: translatex(300px);
+    opacity: 0;
+    transition: all 2s ease-in;
+}
+.showRight{
+    /* background-color: #E2598B; */
+    transform: translateX(0);
+    opacity: 1;
 }
