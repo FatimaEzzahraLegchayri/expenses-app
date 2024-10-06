@@ -120,3 +120,40 @@
         justify-content: center;
     }
 }
+
+@media (min-width: 481px) and (max-width : 768px) {
+    .section{
+        padding: 1em 3em ;
+    }
+    header{
+        width: 100vw;
+    }
+    .title {
+        font-size: 1.5em;
+    }
+    .subTitle{
+        font-size: 0.9em;
+    }
+    .hide{
+        display: none;
+    }
+    .product p:first-child{
+        font-size: 3em;
+    }
+    .download img:nth-child(2){
+        right: 28em;
+        bottom: 1em;
+
+    }
+    .download img:nth-child(1) {
+        left: 23em;
+        bottom: 1em;
+    }
+    .download{
+        padding: 2em 3em;
+    }
+    .download .title{
+        font-size: 3em;
+    }
+    
+}
