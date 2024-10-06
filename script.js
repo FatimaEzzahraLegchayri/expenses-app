@@ -12,7 +12,7 @@ document.addEventListener('scroll',function(){
 
 
 const options = {
-  threshold : 0.3
+  threshold : 0.1
 }
 const containerRight = document.querySelectorAll('.showRight-container')
 const observerRight = new IntersectionObserver(function(entries, observer){
