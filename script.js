@@ -12,7 +12,7 @@ document.addEventListener('scroll',function(){
 
 
 const options = {
-  threshold : 0.4
+  threshold : 0.3
 }
 const containerRight = document.querySelectorAll('.showRight-container')
 const observerRight = new IntersectionObserver(function(entries, observer){
@@ -38,3 +38,17 @@ const observerLeft = new IntersectionObserver(function(entries, observer){
 containerLeft.forEach(el=>{
   observerLeft.observe(el)
 })
+
+// ///////////// responsive ////////////
+const sideBar = document.querySelector(".sideBar")
+const burgerIcon = document.querySelector("header i")
+function showSidebare(){
+  sideBar.style.display = 'flex'
+  burgerIcon.style.display = 'none'
+}
+
+function closeSideBar(){
+  sideBar.style.display = 'none'
+  burgerIcon.style.display = 'block'
+
+}

@@ -6,11 +6,13 @@
     <title>expenses-app</title>
     <link rel="stylesheet" href="./style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./responsive.css">
     <style>
         </style>
 </head>
 <body>
     <header class="header-shadow section" id="header">
+        <input type="checkbox" id="check">
         <a href="#home" class="logo">
             <span>ex</span>
             <p>penses</p>
@@ -20,13 +22,17 @@
             <a href="#about">About us</a>
             <a href="#pricing">Pricing</a>
             <a href="#feedbacks">Feedback</a>
+            <button class="hideOnMobile">Request a demo</button>
         </nav>
-        <button>Request a demo</button>
+        <!-- <i onclick="showSidebare()"  class='bx bx-menu'></i> -->
+        <label for="check" class="menu">
+            <i  class='bx bx-menu'></i>
+        </label>
     </header>
 
     <section id="home" class="feature1 section">
         <div class="textLeft">
-            <p class="title">Track your Expenses to Save Money</p>
+            <p class="title title-hero">Track your Expenses to Save Money</p>
             <p class="subTitle">Helps you to organize your income and expenses</p>
             <button>Try free demo <i class='bx bx-up-arrow-circle bx-flip-vertical' ></i></button>
         </div>
@@ -238,7 +244,7 @@
         <p>Try demo for 7 days with full features.        </p>
         <button>Try free demo <i class='bx bx-chevron-down'></i> </button>
         
-        <div>
+        <div class="img-container">
             <img class="showLeft-container" src="./images/download left.png" alt="">
             <img class="showRight-container" src="./images/download right.png" alt="">
         </div>

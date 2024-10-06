@@ -75,7 +75,14 @@ header button{
     color: orangered;
     background-color: white;
 }
+header i{
+    font-size: 3em;
+    color: rgb(47, 46, 46);
+}
+header i:hover{
+    cursor: pointer;
 
+}
 header button:hover{
     background-color: orangered;
     color: white;
@@ -84,7 +91,7 @@ header button:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     height: 90vh;
     width: 100vw;
 
@@ -367,7 +374,7 @@ to{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    gap: 15px;
 }
 .feedback-section .title{
     /* margin: 2em 0 0.7em 0; */
@@ -379,20 +386,20 @@ to{
     margin: 8em 0 8em 0 ;
 }
 .feedback-card{
-    border: 1px solid rgb(239, 236, 236);
-    border-radius: 1em;
+    border: 1.5px solid rgb(239, 236, 236);
+    border-top: 8px solid orangered;
+    /* border: 0 2px 2px 2px solid grey; */
+    border-radius: 0.8em;
     text-align: start;
-    padding: 1.5em 2em;
-    /* border: 5px solid red; */
-    /* position: relative; */
+    font-size: 0.9em;
+    padding: 1.5em 1.5em;
 }
-/* .color{
-    position: absolute;
-    top: 0%;
-    width: 100rem;
-    /* border: 4px solid red; */
-    /* background-color: #E2598B; */
-/* } */ * 
+.feedback-card:nth-child(2){
+    border-top: 8px solid yellow;
+}
+.feedback-card:nth-child(3){
+    border-top: 8px solid blue;
+}
 .feedbackOwner{
     display: flex;
     align-items: center;
@@ -420,6 +427,9 @@ to{
     background-color: #FF7235;
     color: rgb(255, 254, 254);
     position: relative;
+}
+.download .title{
+    font-size: 3.5em;
 }
 .download button{
     padding:1em 1.4em ;
@@ -552,7 +562,7 @@ footer{
     
     transform: translatex(300px);
     opacity: 0;
-    transition: all 2s ease-in;
+    transition: all 1.5s ease-in;
 }
 .showRight{
     /* background-color: #E2598B; */
